@@ -15,7 +15,7 @@ VideoBoard::VideoBoard(GameBoard&Aliens, int x0, int y0, int fx, int fy):board(A
 void VideoBoard::loadTextures()
 {
     if(board.getGameMode()==EASY)
-        enemyDeployTime=5;
+        enemyDeployTime=4;
     if(board.getGameMode()==HARD)
         enemyDeployTime=3;
 
@@ -24,12 +24,12 @@ void VideoBoard::loadTextures()
     alien1.loadFromFile("image/alien1.png");
     alien2.loadFromFile("image/alien2.png");
     powerup.loadFromFile("image/powerup.png");
-    powerup1.loadFromFile("image/bomb.png");
-    powerup2.loadFromFile("image/slow.png");
+    powerup1.loadFromFile("image/bomb1.png");
+    powerup2.loadFromFile("image/slow1.png");
     fire.loadFromFile("image/fire.png");
     player.loadFromFile("image/player.png");
     laser.loadFromFile("image/lasser.png");
-    back_ground.loadFromFile("image/background1.png");
+    back_ground.loadFromFile("image/background1_1.png");
     endgame.loadFromFile("image/endgamescreen.png");
     fire_sound.loadFromFile("sounds/shoot.wav");
 
@@ -96,7 +96,10 @@ void VideoBoard::play(sf::RenderWindow &window)
                             board.score=0;
                             board.playerPowerUpState=0;
                             board.lives=3;
+                            if(board.getGameMode()==EASY)
                             enemyDeployTime=4;
+                            if(board.getGameMode()==HARD)
+                            enemyDeployTime=3;
                         }
                         if (event.mouseButton.x >= 553 and event.mouseButton.x <= 920 and event.mouseButton.y >= 865 and event.mouseButton.y <= 952)
                         {
@@ -119,7 +122,10 @@ void VideoBoard::play(sf::RenderWindow &window)
                             board.score=0;
                             board.playerPowerUpState=0;
                             board.lives=3;
+                            if(board.getGameMode()==EASY)
                             enemyDeployTime=4;
+                            if(board.getGameMode()==HARD)
+                            enemyDeployTime=3;
                         }
                         if (event.mouseButton.x >= 538 and event.mouseButton.x <= 905 and event.mouseButton.y >= 856 and event.mouseButton.y <= 943)
                         {
@@ -180,14 +186,14 @@ void VideoBoard::play(sf::RenderWindow &window)
                     if(slowTimeTime>=50)
                     {
                         if(board.getGameMode()==EASY)
-                            enemyDeployTime=5;
+                            enemyDeployTime=4;
                         if(board.getGameMode()==HARD)
                             enemyDeployTime=3;
                         board.playerPowerUpState=0;
                         slowTimeCount=0;
                         slowTimeTime=0;
                     }
-                    if(powerUpTimer>=60)
+                    if(powerUpTimer>=200)
                     {
                         board.movePoweUp();
                         board.setPowerUp();

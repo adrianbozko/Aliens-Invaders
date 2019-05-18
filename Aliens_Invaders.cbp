@@ -50,7 +50,9 @@
 		<Unit filename="image/alien1.png" />
 		<Unit filename="image/alien2.png" />
 		<Unit filename="image/background.png" />
+		<Unit filename="image/background1_1.png" />
 		<Unit filename="image/bomb.png" />
+		<Unit filename="image/bomb1.png" />
 		<Unit filename="image/endgamescreen.png" />
 		<Unit filename="image/fire.png" />
 		<Unit filename="image/gameover.png" />
@@ -62,6 +64,7 @@
 		<Unit filename="image/player.png" />
 		<Unit filename="image/powerup.png" />
 		<Unit filename="image/slow.png" />
+		<Unit filename="image/slow1.png" />
 		<Unit filename="include/GameBoard.h" />
 		<Unit filename="include/MainMenu.h" />
 		<Unit filename="include/VideoBoard.h" />
