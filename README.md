@@ -1,1 +1,1 @@
-![aliensreadme](https://zts.ita.pwr.wroc.pl/gitlab/249326/aliens-invaders/blob/master/readme.png)
+![aliensreadme](https://github.com/h0lydev1l/Aliens-Invaders/blob/master/readme.png)
