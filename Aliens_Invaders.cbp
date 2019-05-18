@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Aliens_Invaders" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Aliens_Invaders" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="../../C++/SFML-2.5.1/lib/libsfml-graphics-d.a" />
+					<Add library="../../C++/SFML-2.5.1/lib/libsfml-window-d.a" />
+					<Add library="../../C++/SFML-2.5.1/lib/libsfml-system-d.a" />
+					<Add library="../../C++/SFML-2.5.1/lib/libsfml-audio-d.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Aliens_Invaders" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="../../C++/SFML-2.5.1/lib/libsfml-graphics.a" />
+					<Add library="../../C++/SFML-2.5.1/lib/libsfml-window.a" />
+					<Add library="../../C++/SFML-2.5.1/lib/libsfml-system.a" />
+					<Add library="../../C++/SFML-2.5.1/lib/libsfml-audio.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="../../C++/SFML-2.5.1/include" />
+		</Compiler>
+		<Linker>
+			<Add directory="../../C++/SFML-2.5.1/lib" />
+		</Linker>
+		<Unit filename="image/alien1.png" />
+		<Unit filename="image/alien2.png" />
+		<Unit filename="image/background.png" />
+		<Unit filename="image/bomb.png" />
+		<Unit filename="image/endgamescreen.png" />
+		<Unit filename="image/fire.png" />
+		<Unit filename="image/gameover.png" />
+		<Unit filename="image/greaseguncond.ttf" />
+		<Unit filename="image/heart.png" />
+		<Unit filename="image/lasser.png" />
+		<Unit filename="image/loadingscreen.jpg" />
+		<Unit filename="image/pixelated.ttf" />
+		<Unit filename="image/player.png" />
+		<Unit filename="image/powerup.png" />
+		<Unit filename="image/slow.png" />
+		<Unit filename="include/GameBoard.h" />
+		<Unit filename="include/MainMenu.h" />
+		<Unit filename="include/VideoBoard.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="sounds/explosion.wav" />
+		<Unit filename="sounds/invaderkilled.wav" />
+		<Unit filename="sounds/menutheme.mp3" />
+		<Unit filename="sounds/powerup.ogg" />
+		<Unit filename="sounds/shoot.wav" />
+		<Unit filename="src/GameBoard.cpp" />
+		<Unit filename="src/MainMenu.cpp" />
+		<Unit filename="src/VideoBoard.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
